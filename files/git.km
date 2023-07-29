@@ -1,0 +1,104 @@
+{
+    "root": {
+        "data": {
+            "id": "cuec2das9yo0",
+            "created": 1690601077699,
+            "text": "Git"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cuec2ljdtsw0",
+                    "created": 1690601095634,
+                    "text": "安装配置",
+                    "layout_mind_offset": {
+                        "x": 5,
+                        "y": -131
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cuec7knbejc0",
+                    "created": 1690601485516,
+                    "text": "分支管理",
+                    "layout_mind_offset": {
+                        "x": 30,
+                        "y": 23
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuec8qw5q4w0",
+                            "created": 1690601577475,
+                            "text": "创建分支"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuec9adgeb40",
+                            "created": 1690601619880,
+                            "text": "合并分支"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuec9ypg5vs0",
+                    "created": 1690601672848,
+                    "text": "远程分支",
+                    "layout_mind_offset": {
+                        "x": 580,
+                        "y": 285
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cueca3e234w0",
+                            "created": 1690601683043,
+                            "text": "推向远端"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuecag8a0kg0",
+                            "created": 1690601710992,
+                            "text": "拉取远端"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuecb1vs8400",
+                            "created": 1690601758125,
+                            "text": "与远端分支交互"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuec3m5nl9c0",
+                    "created": 1690601175345,
+                    "text": "版本管理",
+                    "layout_mind_offset": {
+                        "x": 437,
+                        "y": -122
+                    }
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
