@@ -1,0 +1,840 @@
+<!DOCTYPE html><html><head>
+      <title>&#x7B80;&#x4ECB;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\cmy\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.8\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff");
+}
+
+.admonition {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  position: relative;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  border-left: .4rem solid rgba(68, 138, 255, .8);
+  border-radius: .2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: auto;
+}
+
+.admonition>p {
+  margin-top: .8rem;
+}
+
+.admonition>.admonition-title {
+  margin: 0 -1.2rem;
+  padding: .8rem 1.2rem .8rem 3.6rem;
+  border-bottom: 1px solid rgba(68, 138, 255, .2);
+  background-color: rgba(68, 138, 255, .1);
+  font-weight: 700;
+}
+
+.admonition>.admonition-title:before {
+  position: absolute;
+  left: 1.2rem;
+  font-size: 1.5rem;
+  color: rgba(68, 138, 255, .8);
+  content: "\E3C9";
+}
+
+.admonition>.admonition-title:before {
+  font-family: Material Icons;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
+  white-space: nowrap;
+  speak: none;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+.admonition.summary,
+.admonition.abstract,
+.admonition.tldr {
+  border-left-color: rgba(0, 176, 255, .8);
+}
+
+.admonition.summary>.admonition-title,
+.admonition.abstract>.admonition-title,
+.admonition.tldr>.admonition-title {
+  background-color: rgba(0, 176, 255, .1);
+  border-bottom-color: rgba(0, 176, 255, .2);
+}
+
+.admonition.summary>.admonition-title:before,
+.admonition.abstract>.admonition-title:before,
+.admonition.tldr>.admonition-title:before {
+  color: rgba(0, 176, 255, 1);
+  ;
+  content: "\E8D2";
+}
+
+.admonition.hint,
+.admonition.tip {
+  border-left-color: rgba(0, 191, 165, .8);
+}
+
+.admonition.hint>.admonition-title,
+.admonition.tip>.admonition-title {
+  background-color: rgba(0, 191, 165, .1);
+  border-bottom-color: rgba(0, 191, 165, .2);
+}
+
+.admonition.hint>.admonition-title:before,
+.admonition.tip>.admonition-title:before {
+  color: rgba(0, 191, 165, 1);
+  content: "\E80E";
+}
+
+.admonition.info,
+.admonition.todo {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.info>.admonition-title,
+.admonition.todo>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.info>.admonition-title:before,
+.admonition.todo>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E88E";
+}
+
+.admonition.success,
+.admonition.check,
+.admonition.done {
+  border-left-color: rgba(0, 200, 83, .8);
+}
+
+.admonition.success>.admonition-title,
+.admonition.check>.admonition-title,
+.admonition.done>.admonition-title {
+  background-color: rgba(0, 200, 83, .1);
+  border-bottom-color: rgba(0, 200, 83, .2);
+}
+
+.admonition.success>.admonition-title:before,
+.admonition.check>.admonition-title:before,
+.admonition.done>.admonition-title:before {
+  color: rgba(0, 200, 83, 1);
+  ;
+  content: "\E876";
+}
+
+.admonition.question,
+.admonition.help,
+.admonition.faq {
+  border-left-color: rgba(100, 221, 23, .8);
+}
+
+.admonition.question>.admonition-title,
+.admonition.help>.admonition-title,
+.admonition.faq>.admonition-title {
+  background-color: rgba(100, 221, 23, .1);
+  border-bottom-color: rgba(100, 221, 23, .2);
+}
+
+.admonition.question>.admonition-title:before,
+.admonition.help>.admonition-title:before,
+.admonition.faq>.admonition-title:before {
+  color: rgba(100, 221, 23, 1);
+  ;
+  content: "\E887";
+}
+
+.admonition.warning,
+.admonition.attention,
+.admonition.caution {
+  border-left-color: rgba(255, 145, 0, .8);
+}
+
+.admonition.warning>.admonition-title,
+.admonition.attention>.admonition-title,
+.admonition.caution>.admonition-title {
+  background-color: rgba(255, 145, 0, .1);
+  border-bottom-color: rgba(255, 145, 0, .2);
+}
+
+.admonition.attention>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E417";
+}
+
+.admonition.warning>.admonition-title:before,
+.admonition.caution>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E002";
+}
+
+.admonition.failure,
+.admonition.fail,
+.admonition.missing {
+  border-left-color: rgba(255, 82, 82, .8);
+}
+
+.admonition.failure>.admonition-title,
+.admonition.fail>.admonition-title,
+.admonition.missing>.admonition-title {
+  background-color: rgba(255, 82, 82, .1);
+  border-bottom-color: rgba(255, 82, 82, .2);
+}
+
+.admonition.failure>.admonition-title:before,
+.admonition.fail>.admonition-title:before,
+.admonition.missing>.admonition-title:before {
+  color: rgba(255, 82, 82, 1);
+  ;
+  content: "\E14C";
+}
+
+.admonition.danger,
+.admonition.error,
+.admonition.bug {
+  border-left-color: rgba(255, 23, 68, .8);
+}
+
+.admonition.danger>.admonition-title,
+.admonition.error>.admonition-title,
+.admonition.bug>.admonition-title {
+  background-color: rgba(255, 23, 68, .1);
+  border-bottom-color: rgba(255, 23, 68, .2);
+}
+
+.admonition.danger>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E3E7";
+}
+
+.admonition.error>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E14C";
+}
+
+.admonition.bug>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E868";
+}
+
+.admonition.example,
+.admonition.snippet {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.example>.admonition-title,
+.admonition.snippet>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.example>.admonition-title:before,
+.admonition.snippet>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E242";
+}
+
+.admonition.quote,
+.admonition.cite {
+  border-left-color: rgba(158, 158, 158, .8);
+}
+
+.admonition.quote>.admonition-title,
+.admonition.cite>.admonition-title {
+  background-color: rgba(158, 158, 158, .1);
+  border-bottom-color: rgba(158, 158, 158, .2);
+}
+
+.admonition.quote>.admonition-title:before,
+.admonition.cite>.admonition-title:before {
+  color: rgba(158, 158, 158, 1);
+  ;
+  content: "\E244";
+}
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#1-git-&#x7B80;&#x4ECB;" class="md-toc-link">
+            <ol>
+<li>Git &#x7B80;&#x4ECB;</li>
+</ol>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#2-git-&#x5B89;&#x88C5;&#x914D;&#x7F6E;" class="md-toc-link">
+            <ol start="2">
+<li>Git &#x5B89;&#x88C5;&#x914D;&#x7F6E;</li>
+</ol>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#3-git-&#x57FA;&#x7840;&#x6982;&#x5FF5;" class="md-toc-link"><ol start="3">
+<li>Git &#x57FA;&#x7840;&#x6982;&#x5FF5;</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#31-git-&#x5206;&#x533A;" class="md-toc-link">
+            <p>3.1. Git &#x5206;&#x533A;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#32-git-vs-github" class="md-toc-link">
+            <p>3.2. Git vs GitHub</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#4-git-&#x7248;&#x672C;&#x7BA1;&#x7406;" class="md-toc-link"><ol start="4">
+<li>Git &#x7248;&#x672C;&#x7BA1;&#x7406;</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#41-git-&#x5DE5;&#x7A0B;&#x521D;&#x59CB;&#x5316;" class="md-toc-link">
+            <p>4.1. Git &#x5DE5;&#x7A0B;&#x521D;&#x59CB;&#x5316;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#42-&#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;" class="md-toc-link">
+            <p>4.2. &#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#43-git-&#x7248;&#x672C;&#x63D0;&#x4EA4;" class="md-toc-link">
+            <p>4.3. Git &#x7248;&#x672C;&#x63D0;&#x4EA4;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#44-&#x67E5;&#x770B;&#x5386;&#x53F2;&#x7248;&#x672C;&#x4FE1;&#x606F;" class="md-toc-link">
+            <p>4.4. &#x67E5;&#x770B;&#x5386;&#x53F2;&#x7248;&#x672C;&#x4FE1;&#x606F;</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#45-&#x7248;&#x672C;&#x56DE;&#x9000;" class="md-toc-link"><p>4.5. &#x7248;&#x672C;&#x56DE;&#x9000;</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#451-&#x56DE;&#x9000;&#x5386;&#x53F2;&#x7248;&#x672C;" class="md-toc-link">
+            <p>4.5.1. &#x56DE;&#x9000;&#x5386;&#x53F2;&#x7248;&#x672C;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#452-&#x56DE;&#x9000;&#x5230;&#x88AB;&#x56DE;&#x9000;&#x7684;&#x7248;&#x672C;" class="md-toc-link">
+            <p>4.5.2. &#x56DE;&#x9000;&#x5230;&#x88AB;&#x56DE;&#x9000;&#x7684;&#x7248;&#x672C;</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#46-&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x53D8;&#x5316;" class="md-toc-link">
+            <p>4.6. &#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x53D8;&#x5316;</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#5-&#x5206;&#x652F;&#x7BA1;&#x7406;" class="md-toc-link"><ol start="5">
+<li>&#x5206;&#x652F;&#x7BA1;&#x7406;</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#51-&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;" class="md-toc-link">
+            <p>5.1. &#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#52-&#x67E5;&#x770B;&#x5206;&#x652F;" class="md-toc-link">
+            <p>5.2. &#x67E5;&#x770B;&#x5206;&#x652F;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#53-&#x5220;&#x9664;&#x5206;&#x652F;" class="md-toc-link">
+            <p>5.3. &#x5220;&#x9664;&#x5206;&#x652F;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x5206;&#x652F;&#x5408;&#x5E76;" class="md-toc-link">
+            <p>&#x5206;&#x652F;&#x5408;&#x5E76;</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#6-&#x8FDC;&#x7AEF;&#x548C;&#x672C;&#x5730;&#x4EA4;&#x4E92;" class="md-toc-link"><ol start="6">
+<li>&#x8FDC;&#x7AEF;&#x548C;&#x672C;&#x5730;&#x4EA4;&#x4E92;</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x62C9;&#x53D6;&#x8FDC;&#x7AEF;" class="md-toc-link">
+            <p>&#x62C9;&#x53D6;&#x8FDC;&#x7AEF;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x63A8;&#x5411;&#x8FDC;&#x7AEF;" class="md-toc-link">
+            <p>&#x63A8;&#x5411;&#x8FDC;&#x7AEF;</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#7-&#x66F4;&#x591A;" class="md-toc-link">
+            <ol start="7">
+<li>&#x66F4;&#x591A;</li>
+</ol>
+
+          </a></div>
+</div>
+<h1 class="mume-header" id="1-git-%E7%AE%80%E4%BB%8B">1. Git &#x7B80;&#x4ECB;</h1>
+
+<ul>
+<li>&#x8F7B;&#x91CF;&#x5316;&#x5206;&#x5E03;&#x5F0F;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</li>
+<li>&#x7248;&#x672C;&#x7BA1;&#x7406;</li>
+<li>&#x8FED;&#x4EE3;&#x5F00;&#x53D1;</li>
+<li>&#x5408;&#x4F5C;&#x5F00;&#x53D1;</li>
+</ul>
+<h1 class="mume-header" id="2-git-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE">2. Git &#x5B89;&#x88C5;&#x914D;&#x7F6E;</h1>
+
+<h3 class="mume-header" id="21-linux-%E5%AE%89%E8%A3%85">2.1. Linux &#x5B89;&#x88C5;</h3>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> git-all
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><h3 class="mume-header" id="22-windows-%E5%AE%89%E8%A3%85">2.2. windows &#x5B89;&#x88C5;</h3>
+
+<ul>
+<li>&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305; <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+<li>&#x53CC;&#x51FB;&#x5B89;&#x88C5;&#x65E2;&#x53EF;</li>
+</ul>
+<h3 class="mume-header" id="23-%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE">2.3. &#x53C2;&#x6570;&#x914D;&#x7F6E;</h3>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> config --global user.name <span class="token string">&quot;Your Name&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;email@example.com&quot;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></pre><p>&#x5B9E;&#x4F8B;&#xFF1A;<br>
+<img src="image-1.png" alt="Alt text"></p>
+<hr>
+<h1 class="mume-header" id="3-git-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5">3. Git &#x57FA;&#x7840;&#x6982;&#x5FF5;</h1>
+
+<h2 class="mume-header" id="31-git-%E5%88%86%E5%8C%BA">3.1. Git &#x5206;&#x533A;</h2>
+
+<p>&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x533A;&#x57DF;&#xFF1B;&#x5DE5;&#x4F5C;&#x533A;&#x3001;&#x6682;&#x5B58;&#x533A;&#x3001;&#x7248;&#x672C;&#x533A;</p>
+<p><img src="image.png" alt="Alt text"></p>
+<h2 class="mume-header" id="32-git-vs-github">3.2. Git vs GitHub</h2>
+
+<ul>
+<li>Git &#x662F;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x4EE3;&#x7801;/&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</li>
+<li>GitHub&#x662F;&#x8FDC;&#x7AEF;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;</li>
+</ul>
+<p><img src="image-2.png" alt="Alt text"></p>
+<hr>
+<h1 class="mume-header" id="4-git-%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86">4. Git &#x7248;&#x672C;&#x7BA1;&#x7406;</h1>
+
+<h2 class="mume-header" id="41-git-%E5%B7%A5%E7%A8%8B%E5%88%9D%E5%A7%8B%E5%8C%96">4.1. Git &#x5DE5;&#x7A0B;&#x521D;&#x59CB;&#x5316;</h2>
+
+<ul>
+<li>&#x63A7;&#x5236;&#x53F0;</li>
+<li>git bash</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"> <span class="token function">git</span> init
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><h2 class="mume-header" id="42-%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%BF%AE%E6%94%B9">4.2. &#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;</h2>
+
+<ul>
+<li>&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> status 
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><ul>
+<li>&#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;&#x6682;&#x5B58;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> stash 
+<span class="token function">git</span> stash pop
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></pre><ul>
+<li>&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x4FEE;&#x6539;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> checkout -- file_name    <span class="token comment">#&#x64A4;&#x9500;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;</span>
+<span class="token function">git</span> checkout -- <span class="token builtin class-name">.</span>            <span class="token comment">#&#x64A4;&#x9500;&#x6240;&#x6709;&#x4FEE;&#x6539;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></pre><h2 class="mume-header" id="43-git-%E7%89%88%E6%9C%AC%E6%8F%90%E4%BA%A4">4.3. Git &#x7248;&#x672C;&#x63D0;&#x4EA4;</h2>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers">step1: &#x6DFB;&#x52A0;&#x6307;&#x5B9A;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#x653E;&#x5165;&#x7F13;&#x5B58;&#x533A;
+<span class="token function">git</span> <span class="token function">add</span> revised_file_name
+step2: &#x7F13;&#x5B58;&#x533A;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x653E;&#x5165;&#x7248;&#x672C;&#x533A;&#xFF0C;&#x5E76;&#x6807;&#x8BB0;&#x7248;&#x672C;&#x4FE1;&#x606F;
+<span class="token function">git</span> commit -m <span class="token string">&quot;commit_message&quot;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></pre><ul>
+<li>git add .  # &#x672C;&#x5730;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x653E;&#x5165;&#x6682;&#x5B58;&#x533A;</li>
+<li>git add -u # &#x672C;&#x5730;&#x5DF2;&#x7ECF;&#x8DDF;&#x8E2A;&#x7684;&#x4FEE;&#x6539;&#x653E;&#x5165;&#x7F13;&#x5B58;&#x533A;</li>
+</ul>
+<h2 class="mume-header" id="44-%E6%9F%A5%E7%9C%8B%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF">4.4. &#x67E5;&#x770B;&#x5386;&#x53F2;&#x7248;&#x672C;&#x4FE1;&#x606F;</h2>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token comment"># &#x67E5;&#x770B;&#x73B0;&#x6709;&#x5206;&#x652F;&#x7684;log&#x4FE1;&#x606F;</span>
+<span class="token function">git</span> log
+
+<span class="token comment"># &#x67E5;&#x770B;&#x5386;&#x53F2;log &#x4FE1;&#x606F;</span>
+<span class="token function">git</span> reflog
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></pre><h2 class="mume-header" id="45-%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80">4.5. &#x7248;&#x672C;&#x56DE;&#x9000;</h2>
+
+<div class="admonition danger">
+<p class="admonition-title">&#x6C38;&#x8FDC;&#x6709;&#x540E;&#x6094;&#x836F;&#x53EF;&#x4EE5;&#x5403;</p>
+</div>
+<h3 class="mume-header" id="451-%E5%9B%9E%E9%80%80%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC">4.5.1. &#x56DE;&#x9000;&#x5386;&#x53F2;&#x7248;&#x672C;</h3>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> reset --hard commit_id
+<span class="token function">git</span> reset --soft commit_id
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></pre><ul>
+<li>--hard &#x786C;&#x65B9;&#x5F0F;&#xFF0C;&#x76F4;&#x63A5;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#xFF0C;&#x5728;&#x6B64;&#x7248;&#x672C;&#x4E4B;&#x540E;&#x7684;&#x4FEE;&#x6539;&#x88AB;&#x820D;&#x5F03;&#x6389;</li>
+<li>--soft &#x8F6F;&#x65B9;&#x5F0F;&#xFF0C;&#x7248;&#x672C;&#x533A;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#xFF0C;&#x5728;&#x6B64;&#x7248;&#x672C;&#x4E4B;&#x524D;&#x7684;&#x4FEE;&#x6539;&#x653E;&#x5165;&#x5DE5;&#x4F5C;&#x533A;</li>
+<li>&#x4E0D;&#x6307;&#x5B9A;&#x65B9;&#x5F0F;&#xFF0C;&#x5C31;&#x662F;soft&#x6A21;&#x578B;</li>
+</ul>
+<p><strong>&#x5176;&#x4ED6;&#x56DE;&#x9000;&#x65B9;&#x5F0F;</strong></p>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> reset --hard HEAD^   <span class="token comment"># &#x56DE;&#x9000;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;</span>
+<span class="token function">git</span> reset --hard HEAD    <span class="token comment"># &#x653E;&#x5F03;&#x672C;&#x5730;&#x6240;&#x6709;&#x4FEE;&#x6539;</span>
+<span class="token function">git</span> reset --hard HEAD~10 <span class="token comment"># &#x56DE;&#x9000;&#x5230;&#x524D;&#x7B2C;10&#x4E2A;&#x7248;&#x672C;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></pre><h3 class="mume-header" id="452-%E5%9B%9E%E9%80%80%E5%88%B0%E8%A2%AB%E5%9B%9E%E9%80%80%E7%9A%84%E7%89%88%E6%9C%AC">4.5.2. &#x56DE;&#x9000;&#x5230;&#x88AB;&#x56DE;&#x9000;&#x7684;&#x7248;&#x672C;</h3>
+
+<p>&#x56DE;&#x9000;&#x5230;&#x5386;&#x53F2;&#x7248;&#x672C;&#x540E;&#xFF0C;&#x518D;&#x56DE;&#x5230;&#x65B0;&#x7684;&#x7248;&#x672C;</p>
+<ul>
+<li>step1: git reflog</li>
+<li>step2: git reset --hard commit_id</li>
+</ul>
+<h2 class="mume-header" id="46-%E6%9F%A5%E7%9C%8B%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%8F%98%E5%8C%96">4.6. &#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x53D8;&#x5316;</h2>
+
+<p>&#x67E5;&#x770B;&#x73B0;&#x5728;&#x4FEE;&#x6539;&#x4E86;&#x90A3;&#x4E9B;&#x5185;&#x5BB9;</p>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> <span class="token function">diff</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><p>&#x642D;&#x914D;&#x5DE5;&#x5177;&#x67E5;&#x770B;&#x53D8;&#x5316; vscode&#x3001;bccompare&#x6216;&#x8005;&#x5176;&#x4ED6;IDE</p>
+<hr>
+<h1 class="mume-header" id="5-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86">5. &#x5206;&#x652F;&#x7BA1;&#x7406;</h1>
+
+<div class="admonition note">
+<p class="admonition-title">&#x589E;&#x67E5;&#x5220;&#x6539;</p>
+</div>
+<h2 class="mume-header" id="51-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF">5.1. &#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;</h2>
+
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A; <code>git branch</code> &#x65B0;&#x5EFA;&#x5206;&#x652F;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x5206;&#x652F;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> branch new_branch_name 
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><ul>
+<li>&#x5207;&#x6362;&#x5230;&#x65B0;&#x7684;&#x5206;&#x652F;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> checkout new_branch_name
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;<code>git checkout -b</code> &#x65B0;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5230;&#x65B0;&#x5206;&#x652F;</p>
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> checkout -b new_brach_name
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><h2 class="mume-header" id="52-%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF">5.2. &#x67E5;&#x770B;&#x5206;&#x652F;</h2>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> branch -a  <span class="token comment"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F;</span>
+<span class="token function">git</span> branch  <span class="token comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x5206;&#x652F;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></pre><h2 class="mume-header" id="53-%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF">5.3. &#x5220;&#x9664;&#x5206;&#x652F;</h2>
+
+<pre data-role="codeBlock" data-info="bash{.line-numbers}" class="language-bash line-numbers"><span class="token function">git</span> branch -D branch_name
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></pre><h2 class="mume-header" id="%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6">&#x5206;&#x652F;&#x5408;&#x5E76;</h2>
+
+<ul>
+<li>
+<p><strong>&#x573A;&#x666F;&#x4E00;&#xFF1A;&#x4E24;&#x6761;&#x5206;&#x652F;&#x5408;&#x5E76;</strong><br>
+<img src="image-3.png" alt="Alt"></p>
+</li>
+<li>
+<p><strong>&#x573A;&#x666F;&#x4E8C;&#xFF1A;&#x6311;&#x9009;&#x67D0;&#x4E9B;&#x7248;&#x672C;&#x5408;&#x5E76;</strong><br>
+<img src="image-4.png" alt="Alt text"></p>
+</li>
+</ul>
+<hr>
+<h1 class="mume-header" id="6-%E8%BF%9C%E7%AB%AF%E5%92%8C%E6%9C%AC%E5%9C%B0%E4%BA%A4%E4%BA%92">6. &#x8FDC;&#x7AEF;&#x548C;&#x672C;&#x5730;&#x4EA4;&#x4E92;</h1>
+
+<h2 class="mume-header" id="%E6%8B%89%E5%8F%96%E8%BF%9C%E7%AB%AF">&#x62C9;&#x53D6;&#x8FDC;&#x7AEF;</h2>
+
+<h2 class="mume-header" id="%E6%8E%A8%E5%90%91%E8%BF%9C%E7%AB%AF">&#x63A8;&#x5411;&#x8FDC;&#x7AEF;</h2>
+
+<h1 class="mume-header" id="7-%E6%9B%B4%E5%A4%9A">7. &#x66F4;&#x591A;</h1>
+
+<div class="admonition note">
+<p class="admonition-title">&#x5B66;&#x65E0;&#x6B62;&#x5883;</p>
+</div>
+<ul>
+<li>git &#x4F7F;&#x7528;&#x5E76;&#x4E0D;&#x590D;&#x6742;&#xFF0C;&#x8FB9;&#x7528;&#x8FB9;&#x67E5;&#xFF0C;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x5DE9;&#x56FA;&#x548C;&#x63D0;&#x5347;</li>
+<li>&#x63A8;&#x8350;&#x5DE5;&#x5177;&#xFF1A;
+<ul>
+<li><strong>TortoiseGit</strong>&#xFF1A; &#x53EF;&#x89C6;&#x5316;git&#x64CD;&#x4F5C;&#x5DE5;&#x5177;</li>
+<li><strong>BCcompare</strong>: &#x6587;&#x4EF6;&#x6BD4;&#x8F83;&#x5DE5;&#x5177;</li>
+<li><strong>vscode</strong>: git history, git graph, git history diff</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
